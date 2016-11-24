@@ -52,6 +52,9 @@ boolean pauseAndroid=false;
 
 boolean pauseSwitch=false;
 
+void danger();
+void pause();
+
 ///////////////////////////////////////////
 ////////////CLASE VENTILADOR///////////////
 ///////////////////////////////////////////
@@ -359,8 +362,8 @@ class Sonda{
 };
 
 Sonda::Sonda(int p){
-  dht=new DHT(pin,DHT22);//Modelo DHT22 Sensor
   pin=p;
+  dht=new DHT(pin,DHT22);//Modelo DHT22 Sensor
   temp=hum=0;
 }
 
